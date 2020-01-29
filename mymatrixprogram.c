@@ -9,8 +9,6 @@ int main(int argc, char * argv[])
 
 {
 	int i,j,k;
-	int rows1,cols1,rows2,cols2;
-	int sum=0;	
 
 	FILE *fp1, *fp2, *matrixoutput;
 
