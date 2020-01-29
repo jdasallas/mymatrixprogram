@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<math.h>
+#define N 2  /* limited only to 2x2 matrix, needs generalization*/
 
 //   read matrix files from CLI arguments
 
@@ -56,5 +57,26 @@ matrix2[i]=malloc(2*sizeof(int));
   }
 
 
-	return 0;
+// multiplication of two matrices
+
+int output[N][N]; 
+
+    for (i = 0; i < N; i++) 
+    { 
+        for (j = 0; j < N; j++) 
+        { 
+            output[i][j] = 0; 
+            for (k = 0; k < N; k++) 
+                output[i][j] += matrix1[i][k]*matrix2[k][j]; 
+        } 
+    } 
+
+    for (i = 0; i < N; i++) 
+    { 
+        for (j = 0; j < N; j++) 
+           printf("%d ", output[i][j]); 
+        printf("\n"); 
+    } 
+  
+    return 0; 
 }
