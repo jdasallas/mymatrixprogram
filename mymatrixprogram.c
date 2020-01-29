@@ -32,7 +32,7 @@ matrix1[i]=malloc(2*sizeof(int));
        if (!fscanf(fp1, "%d", &matrix1[i][j])) 
            break;
       // mat[i][j] -= '0'; 
-       printf("%d\n",matrix1[i][j]); 
+    //    printf("%d\n",matrix1[i][j]);  //uncomment to check if matrix1 prints
       }
 
   }
@@ -51,7 +51,7 @@ matrix2[i]=malloc(2*sizeof(int));
        if (!fscanf(fp2, "%d", &matrix2[i][j])) 
            break;
       // mat[i][j] -= '0'; 
-       printf("%d\n",matrix2[i][j]); 
+    //    printf("%d\n",matrix2[i][j]); //uncomment to check if matrix2 prints
       }
 
   }
