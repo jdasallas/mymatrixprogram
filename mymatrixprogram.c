@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 //   read matrix files from CLI arguments
 
@@ -15,6 +14,7 @@ int sum=0;
 	fp2 = fopen(argv[2],"r");
 
 // count  rows and columns in each matrix
+
 fscanf(fp1,"%i",&rows1);
 fscanf(fp1,"%i",&cols1);
 fscanf(fp2,"%i",&rows2);
