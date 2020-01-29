@@ -1,3 +1,4 @@
 # mymatrixprogram
 Codes and files for matrix multiplication from multiple files
-```$./mymatrixprogram matrix1 matrix2```
+`gcc -o mymatrixprogram mymatrixprogram.c`
+`$./mymatrixprogram matrix1 matrix2`
